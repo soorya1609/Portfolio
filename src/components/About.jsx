@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Layers, Sparkles, Compass, CheckCircle2, User } from 'lucide-react';
+import { Zap, Layers, Sparkles, Compass, CheckCircle2, User, Download } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 const iconMap = {
@@ -22,10 +22,10 @@ export default function About() {
             About Me
           </span>
           <h2 className="section-title">
-            Crafting Digital Products with <span className="gradient-text">Purpose & Precision</span>
+            Architecting Scalable Systems with <span className="gradient-text">Clean Code & Deep Internals</span>
           </h2>
           <p className="section-subtitle">
-            A look into my background, core engineering philosophy, and what drives my work every day.
+            A look into my hands-on background in enterprise application architecture, Windows kernel security, and cloud microservices.
           </p>
         </div>
 
@@ -37,25 +37,40 @@ export default function About() {
               {personal.aboutLong}
             </p>
             <p>
-              Over the course of my career, I've had the privilege of collaborating with high-growth startups, established engineering teams, and creative agencies. I focus heavily on writing clean, self-documenting code, architecting maintainable state logic, and delivering smooth, inclusive user interfaces.
+              From architecting high-throughput microservices at <strong>KnackForge Soft Solutions</strong> using .NET 8, Clean Architecture, and Azure Functions, to developing low-level security and monitoring solutions with Windows Kernel Mini-Filter drivers in C at <strong>Intechhub Solutions</strong>, I bring rare dual expertise in both high-level distributed systems and low-level OS internals.
             </p>
             <p>
-              When I'm not writing code, you can find me exploring open-source tools, tinkering with interactive 3D graphics, or mentoring aspiring developers.
+              I am an <strong>Immediate Joiner</strong> actively looking for opportunities where I can drive robust architecture, mentor development teams, and engineer resilient systems from the ground up.
             </p>
 
             <div style={{ marginTop: '28px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#e2e8f0', fontSize: '0.95rem' }}>
                 <CheckCircle2 size={18} color="#10b981" />
-                <span>Specialized in Modern Component-Driven Frontend Architecture</span>
+                <span>Enterprise Solution Architecture, SOLID Principles & Clean Architecture</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#e2e8f0', fontSize: '0.95rem' }}>
                 <CheckCircle2 size={18} color="#10b981" />
-                <span>Passionate about API Design, Edge Caching & Web Performance</span>
+                <span>Windows Kernel Drivers (Mini-Filter), IOCTL & Memory Dump Analysis (WinDbg)</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#e2e8f0', fontSize: '0.95rem' }}>
                 <CheckCircle2 size={18} color="#10b981" />
-                <span>Dedicated to WCAG Accessibility & Cross-Browser Consistency</span>
+                <span>Azure Cloud Microservices, Function Apps & Automated CI/CD Pipelines</span>
               </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#e2e8f0', fontSize: '0.95rem' }}>
+                <CheckCircle2 size={18} color="#10b981" />
+                <span>Generative AI / LLM Integrations (OpenAI & Semantic Kernel)</span>
+              </div>
+            </div>
+
+            <div style={{ marginTop: '32px' }}>
+              <a
+                href={personal.resumeUrl}
+                download={personal.resumeDownloadName || "Soorya_Sankar_Resume.pdf"}
+                className="btn btn-primary"
+              >
+                <Download size={18} />
+                <span>Download Verified Resume (PDF)</span>
+              </a>
             </div>
           </div>
 

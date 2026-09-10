@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, FileText } from 'lucide-react';
+import { Menu, X, FileText, Download } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Navbar() {
@@ -59,11 +59,12 @@ export default function Navbar() {
           <div className="nav-cta">
             <a
               href={personal.resumeUrl}
+              download={personal.resumeDownloadName || "Soorya_Sankar_Resume.pdf"}
               className="btn btn-secondary btn-sm"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FileText size={16} />
+              <Download size={15} />
               <span>Resume</span>
             </a>
 
@@ -95,14 +96,15 @@ export default function Navbar() {
         </div>
         <a
           href={personal.resumeUrl}
+          download={personal.resumeDownloadName || "Soorya_Sankar_Resume.pdf"}
           className="btn btn-primary"
           style={{ width: '100%' }}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => setMenuOpen(false)}
         >
-          <FileText size={18} />
-          <span>View Resume</span>
+          <Download size={18} />
+          <span>Download Resume (PDF)</span>
         </a>
       </div>
     </>

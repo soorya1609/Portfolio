@@ -1,58 +1,61 @@
 /**
  * Portfolio Data Configuration - Soorya Sankar
- * Tailored for Software Engineering, Clean Architecture, Full-Stack & API Development.
+ * Aligned with verified professional resume.
  */
 
 export const portfolioData = {
   personal: {
     name: "Soorya Sankar",
-    role: "Software Engineer",
+    role: "Senior Software Engineer",
     roles: [
-      "Software Engineer",
-      "Full-Stack & Backend Specialist",
-      "Clean Architecture & API Architect",
-      ".NET & C#",
-      "Technical Leadership & Mentorship"
+      "Senior Software Engineer",
+      "Full-Stack & Backend Architect (.NET 8 / C#)",
+      "Windows Systems & Kernel Engineer (C / Mini-Filter)",
+      "Cloud & Microservices Specialist (Azure)",
+      "Generative AI & Semantic Kernel Integrator"
     ],
-    status: "Available for new opportunities",
-    location: "Chennai, India (Open to Remote / Global)",
+    status: "Immediate Joiner • Open to Opportunities",
+    location: "Chennai, Tamil Nadu, India",
+    phone: "+91 72000 90257",
     email: "sooryasan16@gmail.com",
-    bioSnippet: "Engineering scalable backend architectures, high-performance web applications, and intuitive user experiences with clean code and robust domain design.",
-    aboutLong: "Hello! I'm Soorya Sankar, a software engineer focused on building robust enterprise architectures, high-throughput RESTful APIs, and modern responsive user interfaces. I specialize in Clean Architecture, domain-driven design, and designing maintainable systems that scale seamlessly. From architecting secure multi-tenant PostgreSQL systems to developing interactive React and cross-platform applications, I thrive on crafting reliable end-to-end software solutions.",
-    resumeUrl: "#resume",
+    resumeUrl: "/Soorya_Sankar_Resume.pdf",
+    resumeDownloadName: "Soorya_Sankar_Resume.pdf",
+    bioSnippet: "Software Engineer with proven hands-on experience in architecting scalable enterprise applications, Windows systems engineering, and high-performance microservices.",
+    aboutLong: "Software Engineer with proven hands-on experience in architecting scalable enterprise applications and high-performance systems. Proficient across the full stack with C#, .NET 8, ASP.NET Core, React, and Azure, alongside specialized expertise in Windows systems engineering (C, Kernel Mini-Filter Drivers, IOCTL). Proven track record of delivering resilient microservices, secure RESTful APIs, and modern UIs using Clean Architecture.",
     socialLinks: {
       github: "https://github.com/soorya1609",
-      linkedin: "https://www.linkedin.com/in/soorya-sankar-software-engineer/?locale=en",
-      email: "mailto:sooryasan16@gmail.com"
+      linkedin: "https://www.linkedin.com/in/soorya-sankar-software-engineer",
+      email: "mailto:sooryasan16@gmail.com",
+      phone: "tel:+917200090257"
     }
   },
 
   stats: [
-    { label: "Years of Engineering", value: "3+" },
-    { label: "Production Solutions", value: "20+" },
-    { label: "GitHub Contributions", value: "1.2k+" },
-    { label: "Code Quality & Reliability", value: "100%" }
+    { label: "Core Tech Stack", value: ".NET 8 & C#" },
+    { label: "Systems & Security", value: "Kernel / C" },
+    { label: "Cloud & DevOps", value: "Azure" },
+    { label: "Notice Period", value: "Immediate" }
   ],
 
   values: [
     {
-      title: "Clean Architecture",
-      description: "Strict layer separation between domain rules, use cases, persistence, and presentation.",
+      title: "Clean Architecture & SOLID",
+      description: "Strict layer separation between domain models, use cases, persistence, and RESTful presentations.",
       icon: "Layers"
     },
     {
-      title: "High Performance",
-      description: "Optimized SQL queries, effective caching strategies, and lean, responsive UI rendering.",
+      title: "Systems & Kernel Security",
+      description: "Deep Windows internals engineering: Mini-Filter drivers, IOCTL communication, and WinDbg BSOD analysis.",
       icon: "Zap"
     },
     {
-      title: "Security & Multi-Tenancy",
-      description: "Zero-compromise JWT auth, granular role-based access control (RBAC), and tenant data isolation.",
+      title: "Resilient Cloud Microservices",
+      description: "Scalable Azure Function Apps, App Services, and high-throughput background data processing engines.",
       icon: "Sparkles"
     },
     {
-      title: "Continuous Innovation",
-      description: "Keeping pace with modern frameworks, cloud runtimes, and engineering best practices.",
+      title: "Generative AI Integration",
+      description: "Practical implementation of LLM integrations using OpenAI / Azure OpenAI APIs and Semantic Kernel.",
       icon: "Compass"
     }
   ],
@@ -61,42 +64,42 @@ export const portfolioData = {
     {
       name: "Backend & Systems",
       skills: [
-        { name: "C# / .NET & ASP.NET Core", level: 94 },
-        { name: "Clean Architecture & CQRS", level: 92 },
-        { name: "RESTful Web APIs & WebSockets", level: 92 },
-        { name: "Node.js & Express", level: 86 },
-        { name: "JWT Auth & Security Protocols", level: 90 },
-        { name: "Entity Framework Core & Dapper", level: 88 }
+        { name: "C# / .NET 8 & ASP.NET Core", level: 96 },
+        { name: "C (Kernel Drivers & Systems)", level: 90 },
+        { name: "Clean Architecture & SOLID", level: 95 },
+        { name: "Entity Framework Core & LINQ", level: 92 },
+        { name: "RESTful Microservices & APIs", level: 94 },
+        { name: "Windows Services & IOCTL", level: 88 }
       ]
     },
     {
-      name: "Frontend & Mobile",
+      name: "Frontend & UI",
       skills: [
-        { name: "React / React 19", level: 92 },
-        { name: "JavaScript (ESNext) & TypeScript", level: 90 },
-        { name: "HTML5 / Modern Vanilla CSS", level: 94 },
-        { name: ".NET MAUI / Mobile Apps", level: 85 },
-        { name: "State Management & Responsive UI", level: 90 }
+        { name: "React 19 & React 16", level: 90 },
+        { name: "TypeScript & JavaScript", level: 90 },
+        { name: "HTML5 & CSS3 / SCSS", level: 92 },
+        { name: "Bootstrap & Responsive Design", level: 90 },
+        { name: ".NET MAUI (Cross-Platform)", level: 85 }
       ]
     },
     {
-      name: "Databases & Cloud",
+      name: "Cloud, DevOps & Security",
       skills: [
-        { name: "PostgreSQL (Multi-Tenancy & Indexing)", level: 92 },
-        { name: "Redis In-Memory Caching", level: 82 },
-        { name: "Docker & Containerization", level: 84 },
-        { name: "Google Cloud (Cloud Run, GCP)", level: 80 },
-        { name: "Database Migrations & Optimization", level: 88 }
-      ]
-    },
-    {
-      name: "Engineering Practices",
-      skills: [
+        { name: "Microsoft Azure (Functions, App Services, VMs)", level: 88 },
+        { name: "Azure DevOps & CI/CD Pipelines", level: 90 },
         { name: "Git, GitHub & Branching Workflows", level: 95 },
-        { name: "Repository & Unit of Work Patterns", level: 94 },
-        { name: "CI/CD & Automated Pipelines", level: 84 },
-        { name: "API Documentation (Swagger / OpenAPI)", level: 92 },
-        { name: "Unit & Integration Testing", level: 82 }
+        { name: "Memory Dumps & BSOD Debugging (WinDbg)", level: 85 },
+        { name: "File System Filtering (DLP Security)", level: 88 }
+      ]
+    },
+    {
+      name: "Databases & AI",
+      skills: [
+        { name: "SQL Server & T-SQL", level: 90 },
+        { name: "PostgreSQL (Multi-Tenancy & Indexing)", level: 90 },
+        { name: "MongoDB NoSQL", level: 85 },
+        { name: "Stored Procedures & Query Optimization", level: 88 },
+        { name: "Generative AI (OpenAI & Semantic Kernel)", level: 86 }
       ]
     }
   ],
@@ -104,121 +107,103 @@ export const portfolioData = {
   projects: [
     {
       id: "case-tracker",
-      title: "CaseTracker Platform",
-      subtitle: "Enterprise Legal Case Management & eCourts Sync",
-      description: "A comprehensive legal practice management ecosystem engineered for law firms and advocates across Tamil Nadu and Puducherry. Features Clean Architecture, ASP.NET Core Web API, PostgreSQL shared-table multi-tenancy, and .NET MAUI cross-platform clients with automated court hearing notifications.",
+      title: "Case Tracker Application",
+      subtitle: "Enterprise Legal Case Management & eCourts Synchronization",
+      description: "Planned and architected the enterprise application from scratch, designing database ER diagrams, API structures, and workflow requirements. Created technical documentation, setup guides, and CI/CD pipelines with GitHub Actions and Azure DevOps to automatically build, test, and deploy updates. Led task planning, code reviews, and coding standards.",
       category: "Full Stack",
-      tags: [".NET 10", "PostgreSQL", "Clean Architecture", ".NET MAUI", "EF Core", "JWT"],
+      tags: ["C#", ".NET 10", "ASP.NET Core Web API", ".NET MAUI", "PostgreSQL", "EF Core", "Azure DevOps"],
       featured: true,
-      stats: "⚖️ Enterprise multi-tenant court tracking",
+      stats: "⚖️ Solution architecture & automated CI/CD pipelines",
       demoUrl: "https://github.com/soorya1609",
       githubUrl: "https://github.com/soorya1609",
       colorGradient: "linear-gradient(135deg, #6366f1 0%, #06b6d4 100%)"
     },
     {
-      id: "nexus-flow",
-      title: "NexusFlow AI",
-      subtitle: "Autonomous Workflow Orchestration Canvas",
-      description: "A node-based visual workflow builder that connects multi-modal AI agents to API endpoints. Features real-time state synchronization, drag-and-drop pipeline generation, and telemetry logs.",
-      category: "Full Stack",
-      tags: ["React", "TypeScript", "Node.js", "WebSockets", "Canvas API"],
+      id: "dlp-system",
+      title: "Data Loss Prevention (DLP) System",
+      subtitle: "Windows Kernel Mini-Filter Driver & Threat Mitigation",
+      description: "Developed a Windows Mini-Filter driver in C to monitor file activity and block unauthorized file transfers across USB, Bluetooth, and network adapters. Designed an IOCTL interface to stream kernel events to user services. Diagnosed and fixed driver stability issues and kernel crashes (BSOD) using WinDbg. Built a React dashboard for administrators to view activity logs and manage security policies.",
+      category: "Systems & Security",
+      tags: ["C", "C#", "Windows Mini-Filter Driver", "IOCTL", "Windows Services", "React", "MongoDB", "WinDbg"],
       featured: true,
-      stats: "⚡ Sub-50ms node execution sync",
-      demoUrl: "https://example.com/nexusflow",
-      githubUrl: "https://github.com/soorya1609",
-      colorGradient: "linear-gradient(135deg, #6366f1 0%, #a855f7 100%)"
-    },
-    {
-      id: "omni-metrics",
-      title: "OmniMetrics Cloud",
-      subtitle: "Distributed Observability & Trace Dashboard",
-      description: "High-density monitoring suite for microservice clusters. Aggregates request latencies, error spikes, and server vitals into interactive real-time visual charts with instant anomaly alert routing.",
-      category: "Full Stack",
-      tags: ["React", "Chart.js", "Express", "PostgreSQL", "Docker"],
-      featured: true,
-      stats: "📊 Handles 50k+ metrics/sec",
-      demoUrl: "https://example.com/omnimetrics",
+      stats: "🛡️ Real-time unauthorized transfer blocking & IOCTL communication",
+      demoUrl: "https://github.com/soorya1609",
       githubUrl: "https://github.com/soorya1609",
       colorGradient: "linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)"
     },
     {
-      id: "aether-design-system",
-      title: "Aether UI Kit",
-      subtitle: "Accessible Component Library & Tokens",
-      description: "Production-ready, keyboard-navigable React design system. Built with WCAG 2.1 AAA compliance, fluid theming support, automated token export from Figma, and zero external runtime dependencies.",
-      category: "Frontend",
-      tags: ["React", "Vanilla CSS", "Design Tokens", "Accessibility", "NPM"],
+      id: "monitoring-agent",
+      title: "Employee Activity Monitoring Agent",
+      subtitle: "Low-Footprint Background Metrics & Telemetry Service",
+      description: "Created lightweight Windows background services to track system activity with minimal CPU and memory usage. Built secure REST APIs to send encrypted activity logs from client systems to the central database. Packaged the application using MSI installers for seamless enterprise-wide deployment.",
+      category: "Systems & Security",
+      tags: ["C#", "React 16", ".NET Windows Services", ".NET Core 6 Web API", "REST APIs", "MongoDB", "MSI"],
       featured: true,
-      stats: "🎨 40+ components, 100% test coverage",
-      demoUrl: "https://example.com/aether-ui",
+      stats: "⚙️ Low-overhead background service with encrypted telemetry",
+      demoUrl: "https://github.com/soorya1609",
       githubUrl: "https://github.com/soorya1609",
-      colorGradient: "linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)"
-    },
-    {
-      id: "pulse-store",
-      title: "Pulse Edge Store",
-      subtitle: "Sub-Second Headless E-Commerce Experience",
-      description: "Lightning-fast digital storefront with edge cache invalidation, persistent cart syncing, instant search with auto-fuzzy match, and Stripe multi-currency checkout integration.",
-      category: "Full Stack",
-      tags: ["React", "Stripe API", "Node.js", "Redis", "REST"],
-      featured: false,
-      stats: "🚀 99 Performance Lighthouse Score",
-      demoUrl: "https://example.com/pulse-store",
-      githubUrl: "https://github.com/soorya1609",
-      colorGradient: "linear-gradient(135deg, #10b981 0%, #06b6d4 100%)"
-    },
-    {
-      id: "cyber-vault",
-      title: "CyberVault Pass",
-      subtitle: "Client-Side Zero-Knowledge Secret Locker",
-      description: "End-to-end encrypted credentials manager utilizing Web Crypto API AES-GCM 256-bit encryption. Secure master-key hashing ensures servers never receive unencrypted user credentials.",
-      category: "Security & Systems",
-      tags: ["React", "Web Crypto API", "Security", "PWA"],
-      featured: false,
-      stats: "🔒 Zero-Knowledge Architecture",
-      demoUrl: "https://example.com/cybervault",
-      githubUrl: "https://github.com/soorya1609",
-      colorGradient: "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)"
+      colorGradient: "linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)"
     }
   ],
 
   experiences: [
     {
-      role: "Software Engineer",
-      company: "Legal Tech & Distributed Systems",
-      period: "2023 - Present",
+      role: "Senior Software Engineer",
+      company: "KnackForge Soft Solutions",
+      period: "Dec 2025 – Mar 2026",
       location: "Chennai, India",
-      description: "Architecting enterprise legal technology platforms, backend web APIs, and cross-platform mobile solutions utilizing Clean Architecture principles.",
+      description: "Built and maintained enterprise microservices using C#, .NET 8, and Clean Architecture following SOLID principles. Developed and deployed Azure Function Apps and REST APIs to handle background data processing.",
       highlights: [
-        "Architected CaseTracker core domain, generic repository pattern, and centralized Unit of Work persistence.",
-        "Engineered PostgreSQL shared-table multi-tenant data layer ensuring robust tenant isolation.",
-        "Configured secure JWT authentication, structured validation exception middleware, and standard API responses.",
-        "Integrated cross-platform client flows targeting .NET MAUI mobile and responsive web portals."
+        "Built and maintained microservices using C#, .NET 8, and Clean Architecture following SOLID principles.",
+        "Developed and deployed Azure Function Apps and REST APIs to handle background data processing."
       ],
-      technologies: ["C#", ".NET 10", "ASP.NET Core", "PostgreSQL", "Clean Architecture", "React"]
+      technologies: ["C#", ".NET 8", "Clean Architecture", "SOLID", "Azure Function Apps", "REST APIs", "Azure"]
     },
     {
-      role: "Full-Stack Software Developer",
-      company: "Software Engineering & Web Systems",
-      period: "2021 - 2023",
+      role: "Software Engineer",
+      company: "Intechhub Solutions",
+      period: "Dec 2023 – Oct 2025",
       location: "Chennai, India",
-      description: "Engineered scalable REST APIs, automated backend routines, and responsive single-page web applications.",
+      description: "Developed low-level security and monitoring products using C, C#, and Windows Kernel drivers. Built a Windows Mini-Filter driver to monitor file activity and block unauthorized file transfers.",
       highlights: [
-        "Built responsive client portals with React and modern CSS, optimizing bundle delivery and render speeds.",
-        "Developed automated data reconciliation scripts and background queue workers.",
-        "Managed database schema migrations and indexing strategies for high-frequency queries."
+        "Developed low-level security and monitoring products using C, C#, and Windows Kernel drivers.",
+        "Built a Windows Mini-Filter driver to monitor file activity and block unauthorized file transfers (USB, network).",
+        "Led a small development team, assigned daily tasks, and fixed critical system crashes (BSOD).",
+        "Handled backend development using C# .NET and REST APIs for client-server communication."
       ],
-      technologies: ["React", "JavaScript", "Node.js", "PostgreSQL", "Git", "Docker"]
+      technologies: ["C", "C#", "Kernel Mini-Filter Drivers", "IOCTL", "WinDbg", "REST APIs", "Windows Services"]
     }
   ],
 
   education: [
     {
-      degree: "Bachelor of Technology / Engineering in Computer Science",
-      institution: "Computer Science & Engineering",
-      period: "2017 - 2021",
-      honors: "First Class with Distinction",
-      activities: "Specialized in Distributed Systems, Object-Oriented Design & Web Architectures"
+      degree: "Master of Computer Applications (MCA) – Online",
+      institution: "SRM Institute of Science and Technology (SRMIST), Chennai",
+      period: "Feb 2025 – Present (Expected Completion: 2027)",
+      honors: "Pursuing Master's Degree in Computer Applications",
+      activities: "Advanced Software Architecture & Enterprise Systems"
+    },
+    {
+      degree: "Bachelor of Arts (BA)",
+      institution: "Tamil Nadu Dr. J. Jayalalithaa Music and Fine Arts University (TNJMFAU)",
+      period: "May 2018 – Apr 2021",
+      honors: "Graduated with Distinction",
+      activities: "Creative Arts & Foundational Computing"
+    }
+  ],
+
+  additionalInfo: [
+    {
+      title: "Architecture & Leadership",
+      description: "Experience in Solution Architecture, ER diagram design, team handling, and mentoring junior developers."
+    },
+    {
+      title: "Generative AI",
+      description: "Practical experience with Prompt Engineering, LLM integrations (OpenAI / Azure OpenAI APIs), and Semantic Kernel."
+    },
+    {
+      title: "Notice Period & Availability",
+      description: "Immediate Joiner."
     }
   ]
 };

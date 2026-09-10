@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Send, Check, Copy, MessageSquare } from 'lucide-react';
+import { Mail, MapPin, Send, Check, Copy, MessageSquare, Phone } from 'lucide-react';
 import { Linkedin, Github } from './Icons';
 import { portfolioData } from '../data/portfolioData';
 
@@ -90,6 +90,21 @@ export default function Contact() {
                 <span>{copied ? 'Copied' : 'Copy'}</span>
               </button>
             </div>
+
+            {/* Phone Card */}
+            {personal.phone && (
+              <div className="glass-card contact-card">
+                <div className="contact-icon-box">
+                  <Phone size={22} />
+                </div>
+                <div style={{ flexGrow: 1 }}>
+                  <div className="contact-card-label">Direct Phone</div>
+                  <a href={`tel:${personal.phone}`} className="contact-card-value">
+                    {personal.phone}
+                  </a>
+                </div>
+              </div>
+            )}
 
             {/* Location Card */}
             <div className="glass-card contact-card">
