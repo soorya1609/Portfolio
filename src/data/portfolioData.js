@@ -1,6 +1,6 @@
 /**
  * Portfolio Data Configuration - Soorya Sankar
- * Aligned with verified professional resume.
+ * Aligned 100% with verified professional resume.
  */
 
 export const portfolioData = {
@@ -15,8 +15,8 @@ export const portfolioData = {
       "Generative AI & Semantic Kernel Integrator"
     ],
     status: "Immediate Joiner • Open to Opportunities",
-    location: "Chennai, Tamil Nadu, India",
-    phone: "+91 72000 90257",
+    location: "Chennai, Tamil Nadu",
+    phone: "72000 90257",
     email: "sooryasan16@gmail.com",
     resumeUrl: "/Soorya_Sankar_Resume.pdf",
     resumeDownloadName: "Soorya_Sankar_Resume.pdf",
@@ -26,31 +26,31 @@ export const portfolioData = {
       github: "https://github.com/soorya1609",
       linkedin: "https://www.linkedin.com/in/soorya-sankar-software-engineer",
       email: "mailto:sooryasan16@gmail.com",
-      phone: "tel:+917200090257"
+      phone: "tel:7200090257"
     }
   },
 
   stats: [
-    { label: "Core Tech Stack", value: ".NET 8 & C#" },
-    { label: "Systems & Security", value: "Kernel / C" },
-    { label: "Cloud & DevOps", value: "Azure" },
+    { label: "Core Backend Stack", value: ".NET 8 & C#" },
+    { label: "Low-Level Systems", value: "Kernel / C" },
+    { label: "Cloud & Microservices", value: "Azure" },
     { label: "Notice Period", value: "Immediate" }
   ],
 
   values: [
     {
       title: "Clean Architecture & SOLID",
-      description: "Strict layer separation between domain models, use cases, persistence, and RESTful presentations.",
+      description: "Strict layer separation between domain models, business logic, persistence, and RESTful presentations.",
       icon: "Layers"
     },
     {
-      title: "Systems & Kernel Security",
-      description: "Deep Windows internals engineering: Mini-Filter drivers, IOCTL communication, and WinDbg BSOD analysis.",
+      title: "Systems & Security Engineering",
+      description: "Deep Windows internals expertise: Mini-Filter drivers, IOCTL communication, memory dump analysis & WinDbg.",
       icon: "Zap"
     },
     {
-      title: "Resilient Cloud Microservices",
-      description: "Scalable Azure Function Apps, App Services, and high-throughput background data processing engines.",
+      title: "Resilient Azure Microservices",
+      description: "High-throughput Azure Function Apps, App Services, and scalable background data processing pipelines.",
       icon: "Sparkles"
     },
     {
@@ -64,12 +64,13 @@ export const portfolioData = {
     {
       name: "Backend & Systems",
       skills: [
-        { name: "C# / .NET 8 & ASP.NET Core", level: 96 },
-        { name: "C (Kernel Drivers & Systems)", level: 90 },
-        { name: "Clean Architecture & SOLID", level: 95 },
+        { name: "C# (.NET 8 / .NET Core)", level: 96 },
+        { name: "C (Kernel Mini-Filter Drivers & IOCTL)", level: 90 },
+        { name: "ASP.NET Core Web API", level: 95 },
         { name: "Entity Framework Core & LINQ", level: 92 },
-        { name: "RESTful Microservices & APIs", level: 94 },
-        { name: "Windows Services & IOCTL", level: 88 }
+        { name: "RESTful Microservices & Clean Architecture", level: 94 },
+        { name: "SOLID Principles & Design Patterns", level: 95 },
+        { name: "Windows Services & User-Kernel Comm.", level: 88 }
       ]
     },
     {
@@ -78,25 +79,25 @@ export const portfolioData = {
         { name: "React 19 & React 16", level: 90 },
         { name: "TypeScript & JavaScript", level: 90 },
         { name: "HTML5 & CSS3 / SCSS", level: 92 },
-        { name: "Bootstrap & Responsive Design", level: 90 },
-        { name: ".NET MAUI (Cross-Platform)", level: 85 }
+        { name: "Bootstrap & Modern Responsive UI", level: 90 },
+        { name: ".NET MAUI (Cross-Platform Apps)", level: 86 }
       ]
     },
     {
-      name: "Cloud, DevOps & Security",
+      name: "Cloud, DevOps & Debugging",
       skills: [
-        { name: "Microsoft Azure (Functions, App Services, VMs)", level: 88 },
-        { name: "Azure DevOps & CI/CD Pipelines", level: 90 },
-        { name: "Git, GitHub & Branching Workflows", level: 95 },
-        { name: "Memory Dumps & BSOD Debugging (WinDbg)", level: 85 },
-        { name: "File System Filtering (DLP Security)", level: 88 }
+        { name: "Microsoft Azure (Functions, App Services, Blob, VMs)", level: 90 },
+        { name: "Azure DevOps & CI/CD Pipelines", level: 92 },
+        { name: "Git & GitHub Branching Workflows", level: 95 },
+        { name: "Memory Dumps & BSOD Debugging (WinDbg)", level: 86 },
+        { name: "File System Filtering (DLP Security)", level: 90 }
       ]
     },
     {
       name: "Databases & AI",
       skills: [
-        { name: "SQL Server & T-SQL", level: 90 },
-        { name: "PostgreSQL (Multi-Tenancy & Indexing)", level: 90 },
+        { name: "SQL Server (T-SQL)", level: 90 },
+        { name: "PostgreSQL Server", level: 90 },
         { name: "MongoDB NoSQL", level: 85 },
         { name: "Stored Procedures & Query Optimization", level: 88 },
         { name: "Generative AI (OpenAI & Semantic Kernel)", level: 86 }
@@ -109,11 +110,17 @@ export const portfolioData = {
       id: "case-tracker",
       title: "Case Tracker Application",
       subtitle: "Enterprise Legal Case Management & eCourts Synchronization",
-      description: "Planned and architected the enterprise application from scratch, designing database ER diagrams, API structures, and workflow requirements. Created technical documentation, setup guides, and CI/CD pipelines with GitHub Actions and Azure DevOps to automatically build, test, and deploy updates. Led task planning, code reviews, and coding standards.",
-      category: "Full Stack",
-      tags: ["C#", ".NET 10", "ASP.NET Core Web API", ".NET MAUI", "PostgreSQL", "EF Core", "Azure DevOps"],
+      description: "Planned and architected the application from scratch, designing database ER diagrams, API structures, and workflow requirements before starting development.",
+      highlights: [
+        "Planned and architected the application from scratch, designing database ER diagrams, API structures, and workflow requirements before starting development.",
+        "Created clear technical documentation, API specifications, and setup guides to help multiple team members onboard and write code easily.",
+        "Set up CI/CD pipelines using GitHub Actions / Azure DevOps to automatically build, test, and deploy code updates from team members.",
+        "Led daily task planning, conducted code reviews, and guided contributors to maintain consistent coding standards."
+      ],
+      category: "Enterprise & Full Stack",
+      tags: ["C#", ".NET 10", "ASP.NET Core Web API", "Maui", "PostgresSQL Server", "Entity Framework Core", "Azure DevOps"],
       featured: true,
-      stats: "⚖️ Solution architecture & automated CI/CD pipelines",
+      stats: "⚖️ Complete architecture from scratch with automated CI/CD",
       demoUrl: "https://github.com/soorya1609",
       githubUrl: "https://github.com/soorya1609",
       colorGradient: "linear-gradient(135deg, #6366f1 0%, #06b6d4 100%)"
@@ -121,8 +128,14 @@ export const portfolioData = {
     {
       id: "dlp-system",
       title: "Data Loss Prevention (DLP) System",
-      subtitle: "Windows Kernel Mini-Filter Driver & Threat Mitigation",
-      description: "Developed a Windows Mini-Filter driver in C to monitor file activity and block unauthorized file transfers across USB, Bluetooth, and network adapters. Designed an IOCTL interface to stream kernel events to user services. Diagnosed and fixed driver stability issues and kernel crashes (BSOD) using WinDbg. Built a React dashboard for administrators to view activity logs and manage security policies.",
+      subtitle: "Windows Kernel Mini-Filter Driver & Threat Protection",
+      description: "Developed a Windows Mini-Filter driver in C to track and block unauthorized file transfers across USB, Bluetooth, and network adapters.",
+      highlights: [
+        "Developed a Windows Mini-Filter driver in C to track and block unauthorized file transfers (USB, Bluetooth, network).",
+        "Designed an IOCTL interface to send alerts and file events from kernel mode to user services.",
+        "Fixed driver stability issues and kernel crashes (BSOD) using WinDbg.",
+        "Built a React dashboard for administrators to view activity logs and manage security policies."
+      ],
       category: "Systems & Security",
       tags: ["C", "C#", "Windows Mini-Filter Driver", "IOCTL", "Windows Services", "React", "MongoDB", "WinDbg"],
       featured: true,
@@ -134,12 +147,17 @@ export const portfolioData = {
     {
       id: "monitoring-agent",
       title: "Employee Activity Monitoring Agent",
-      subtitle: "Low-Footprint Background Metrics & Telemetry Service",
-      description: "Created lightweight Windows background services to track system activity with minimal CPU and memory usage. Built secure REST APIs to send encrypted activity logs from client systems to the central database. Packaged the application using MSI installers for seamless enterprise-wide deployment.",
+      subtitle: "Low-Footprint Background Metrics & Audit Daemon",
+      description: "Created lightweight Windows background services to track system metrics with minimal CPU and memory usage.",
+      highlights: [
+        "Created lightweight Windows background services to track system metrics with minimal CPU and memory usage.",
+        "Built secure REST APIs to send encrypted activity logs from client systems to the central database.",
+        "Packaged the application using MSI installers for easy installation across enterprise machines."
+      ],
       category: "Systems & Security",
       tags: ["C#", "React 16", ".NET Windows Services", ".NET Core 6 Web API", "REST APIs", "MongoDB", "MSI"],
       featured: true,
-      stats: "⚙️ Low-overhead background service with encrypted telemetry",
+      stats: "⚙️ Low CPU/memory background daemon with encrypted telemetry",
       demoUrl: "https://github.com/soorya1609",
       githubUrl: "https://github.com/soorya1609",
       colorGradient: "linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)"
@@ -152,12 +170,12 @@ export const portfolioData = {
       company: "KnackForge Soft Solutions",
       period: "Dec 2025 – Mar 2026",
       location: "Chennai, India",
-      description: "Built and maintained enterprise microservices using C#, .NET 8, and Clean Architecture following SOLID principles. Developed and deployed Azure Function Apps and REST APIs to handle background data processing.",
+      description: "Built and maintained microservices using C#, .NET 8, and Clean Architecture following SOLID principles. Developed and deployed Azure Function Apps and REST APIs to handle background data processing.",
       highlights: [
-        "Built and maintained microservices using C#, .NET 8, and Clean Architecture following SOLID principles.",
-        "Developed and deployed Azure Function Apps and REST APIs to handle background data processing."
+        "Built and maintained microservices using C#, .NET 8, and Clean Architecture following SOLID principles",
+        "Developed and deployed Azure Function Apps and REST APIs to handle background data processing"
       ],
-      technologies: ["C#", ".NET 8", "Clean Architecture", "SOLID", "Azure Function Apps", "REST APIs", "Azure"]
+      technologies: ["C#", ".NET 8", "Clean Architecture", "SOLID Principles", "Azure Function Apps", "REST APIs", "Azure"]
     },
     {
       role: "Software Engineer",
@@ -171,7 +189,7 @@ export const portfolioData = {
         "Led a small development team, assigned daily tasks, and fixed critical system crashes (BSOD).",
         "Handled backend development using C# .NET and REST APIs for client-server communication."
       ],
-      technologies: ["C", "C#", "Kernel Mini-Filter Drivers", "IOCTL", "WinDbg", "REST APIs", "Windows Services"]
+      technologies: ["C", "C#", "Windows Kernel Drivers (Mini-Filter)", "IOCTL", "WinDbg", "Windows Services", "REST APIs"]
     }
   ],
 
@@ -181,29 +199,33 @@ export const portfolioData = {
       institution: "SRM Institute of Science and Technology (SRMIST), Chennai",
       period: "Feb 2025 – Present (Expected Completion: 2027)",
       honors: "Pursuing Master's Degree in Computer Applications",
-      activities: "Advanced Software Architecture & Enterprise Systems"
+      activities: "Advanced Enterprise Architectures, Cloud Platforms & Distributed Systems"
     },
     {
       degree: "Bachelor of Arts (BA)",
       institution: "Tamil Nadu Dr. J. Jayalalithaa Music and Fine Arts University (TNJMFAU)",
       period: "May 2018 – Apr 2021",
-      honors: "Graduated with Distinction",
-      activities: "Creative Arts & Foundational Computing"
+      honors: "Completed Bachelor's Degree",
+      activities: "Foundation in Computing & Creative Arts"
     }
   ],
 
   additionalInfo: [
     {
       title: "Architecture & Leadership",
-      description: "Experience in Solution Architecture, ER diagram design, team handling, and mentoring junior developers."
+      description: "Experience in Solution Architecture, ER diagram design, team handling, and mentoring junior developers.",
+      icon: "Layers"
     },
     {
       title: "Generative AI",
-      description: "Practical experience with Prompt Engineering, LLM integrations (OpenAI / Azure OpenAI APIs), and Semantic Kernel."
+      description: "Practical experience with Prompt Engineering, LLM integrations (OpenAI / Azure OpenAI APIs), and Semantic Kernel.",
+      icon: "Compass"
     },
     {
       title: "Notice Period & Availability",
-      description: "Immediate Joiner."
+      description: "Immediate Joiner. Ready to contribute from day one.",
+      badge: "Immediate Joiner",
+      icon: "Zap"
     }
   ]
 };

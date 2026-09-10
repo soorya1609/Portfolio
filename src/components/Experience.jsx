@@ -1,9 +1,9 @@
 import React from 'react';
-import { Briefcase, GraduationCap, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Experience() {
-  const { experiences, education } = portfolioData;
+  const { experiences, education, additionalInfo } = portfolioData;
 
   return (
     <section id="experience" className="section" style={{ background: 'rgba(11, 17, 32, 0.4)' }}>
@@ -73,7 +73,7 @@ export default function Experience() {
         <div style={{ maxWidth: '800px', margin: '60px auto 0' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
             <GraduationCap size={22} color="#06b6d4" />
-            <h3 style={{ fontSize: '1.4rem' }}>Education & Certifications</h3>
+            <h3 style={{ fontSize: '1.4rem' }}>Education</h3>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -100,6 +100,35 @@ export default function Experience() {
             ))}
           </div>
         </div>
+
+        {/* Additional Leadership & Competencies */}
+        {additionalInfo && additionalInfo.length > 0 && (
+          <div style={{ maxWidth: '800px', margin: '60px auto 0' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
+              <Award size={22} color="#8b5cf6" />
+              <h3 style={{ fontSize: '1.4rem' }}>Leadership & Domain Competencies</h3>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
+              {additionalInfo.map((item, idx) => (
+                <div key={idx} className="glass-card" style={{ padding: '22px' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px', flexWrap: 'wrap', gap: '8px' }}>
+                    <h4 style={{ fontSize: '1.05rem', color: '#f8fafc' }}>{item.title}</h4>
+                    {item.badge && (
+                      <span className="hero-status-pill" style={{ margin: 0, padding: '4px 10px', fontSize: '0.75rem' }}>
+                        <span className="pulse-indicator"></span>
+                        {item.badge}
+                      </span>
+                    )}
+                  </div>
+                  <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: '1.6' }}>
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

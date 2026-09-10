@@ -1040,7 +1040,31 @@ img {
   font-size: 0.85rem;
   font-weight: 500;
   color: #e2e8f0;
+  margin-bottom: 16px;
+}
+
+.project-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-bottom: 20px;
+}
+
+.project-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.55;
+}
+
+.project-bullet-chevron {
+  color: var(--accent-secondary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  flex-shrink: 0;
 }
 
 .project-tags {

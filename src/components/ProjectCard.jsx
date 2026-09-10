@@ -43,6 +43,17 @@ export default function ProjectCard({ project }) {
         </div>
       )}
 
+      {project.highlights && project.highlights.length > 0 && (
+        <ul className="project-bullets">
+          {project.highlights.map((bullet, idx) => (
+            <li key={idx} className="project-bullet-item">
+              <span className="project-bullet-chevron">▹</span>
+              <span>{bullet}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+
       <div className="project-tags">
         {project.tags.map((tag) => (
           <span key={tag} className="tech-pill">
