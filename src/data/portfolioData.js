@@ -22,9 +22,12 @@ export const portfolioData = {
     resumeDownloadName: "Soorya_Sankar_Resume.pdf",
     bioSnippet: "Software Engineer with proven hands-on experience in architecting scalable enterprise applications, Windows systems engineering, and high-performance microservices.",
     aboutLong: "Software Engineer with proven hands-on experience in architecting scalable enterprise applications and high-performance systems. Proficient across the full stack with C#, .NET 8, ASP.NET Core, React, and Azure, alongside specialized expertise in Windows systems engineering (C, Kernel Mini-Filter Drivers, IOCTL). Proven track record of delivering resilient microservices, secure RESTful APIs, and modern UIs using Clean Architecture.",
+    whatsappNumber: "+91 72000 90257",
+    whatsappUrl: "https://wa.me/917200090257",
     socialLinks: {
       github: "https://github.com/soorya1609",
       linkedin: "https://www.linkedin.com/in/soorya-sankar-software-engineer",
+      whatsapp: "https://wa.me/917200090257",
       email: "mailto:sooryasan16@gmail.com",
       phone: "tel:7200090257"
     }
