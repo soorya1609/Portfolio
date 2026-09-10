@@ -1,6 +1,6 @@
 import React from 'react';
-import { ArrowUp, Heart } from 'lucide-react';
-import { Github, Linkedin } from './Icons';
+import { ArrowUp } from 'lucide-react';
+import { Github, Linkedin, WhatsApp } from './Icons';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Footer() {
@@ -12,33 +12,38 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="container footer-container">
-        <div className="footer-text">
-          <p>
-            © {new Date().getFullYear()} {personal.name}. Built with{' '}
-            <span style={{ color: '#ef4444' }}>♥</span> using React & Modern CSS.
-          </p>
-        </div>
-
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <div className="container footer-container" style={{ justifyContent: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
           <div className="footer-socials">
-            <a
-              href={personal.socialLinks.github}
-              target="_blank"
-              rel="noreferrer"
-              className="social-icon-btn"
-              aria-label="GitHub"
-            >
-              <Github size={18} />
-            </a>
             <a
               href={personal.socialLinks.linkedin}
               target="_blank"
               rel="noreferrer"
               className="social-icon-btn"
               aria-label="LinkedIn"
+              title="LinkedIn Profile"
             >
               <Linkedin size={18} />
+            </a>
+            <a
+              href={personal.socialLinks.github}
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon-btn"
+              aria-label="GitHub"
+              title="GitHub Profile"
+            >
+              <Github size={18} />
+            </a>
+            <a
+              href={personal.socialLinks.whatsapp || 'https://wa.me/917200090257'}
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon-btn"
+              aria-label="WhatsApp"
+              title="WhatsApp Chat"
+            >
+              <WhatsApp size={18} />
             </a>
           </div>
 
