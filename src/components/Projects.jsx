@@ -21,27 +21,42 @@ export default function Projects() {
         <div className="section-header">
           <span className="section-tag">
             <FolderGit2 size={14} />
-            Featured Work
+            Featured Engineering Work
           </span>
           <h2 className="section-title">
-            Recent <span className="gradient-text">Projects & Systems</span>
+            Featured <span className="gradient-text">Projects &amp; Systems</span>
           </h2>
           <p className="section-subtitle">
-            A curated showcase of web applications, developer tools, and architectures I've built.
+            A comprehensive portfolio of enterprise Clean Architecture platforms, low-level Windows Minifilter security drivers, high-throughput cloud pipelines, and AI integrations.
           </p>
         </div>
 
         {/* Category Filters */}
         <div className="project-filters">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              className={`filter-btn ${filter === cat ? 'active' : ''}`}
-              onClick={() => setFilter(cat)}
-            >
-              {cat}
-            </button>
-          ))}
+          {categories.map((cat) => {
+            const count = cat === 'All' ? projects.length : projects.filter((p) => p.category === cat).length;
+            return (
+              <button
+                key={cat}
+                className={`filter-btn ${filter === cat ? 'active' : ''}`}
+                onClick={() => setFilter(cat)}
+              >
+                <span>{cat}</span>
+                <span
+                  style={{
+                    fontSize: '0.72rem',
+                    opacity: 0.8,
+                    marginLeft: '6px',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    padding: '1px 6px',
+                    borderRadius: '9999px'
+                  }}
+                >
+                  {count}
+                </span>
+              </button>
+            );
+          })}
         </div>
 
         {/* Projects Grid */}

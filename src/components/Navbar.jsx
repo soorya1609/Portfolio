@@ -41,6 +41,12 @@ export default function Navbar() {
     <>
       <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container">
+          {/* Logo */}
+          <a href="#hero" className="nav-logo" aria-label="Soorya Sankar">
+            <span className="nav-logo-icon">S</span>
+            <span className="gradient-text">Soorya</span>
+            <span style={{ color: '#38bdf8', fontSize: '0.85rem', fontWeight: 600 }}>.dev</span>
+          </a>
 
           {/* Desktop Nav Links */}
           <nav className="nav-links">
