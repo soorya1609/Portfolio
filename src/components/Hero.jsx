@@ -116,7 +116,7 @@ export default function Hero() {
               </div>
 
               <div className="code-snippet">
-                <p><span className="code-keyword">public class</span> <span className="code-fn">EngineerProfile</span></p>
+                <p><span className="code-keyword">public class</span> <span className="code-fn">SoftwareEngineerProfile</span></p>
                 <p>&#123;</p>
                 <p style={{ paddingLeft: '1.2rem' }}>
                   <span className="code-keyword">public string</span> <span className="code-prop">Name</span> =&gt; <span className="code-str">"{personal.name}"</span>;
@@ -125,13 +125,19 @@ export default function Hero() {
                   <span className="code-keyword">public string</span> <span className="code-prop">Role</span> =&gt; <span className="code-str">"{personal.role}"</span>;
                 </p>
                 <p style={{ paddingLeft: '1.2rem' }}>
+                  <span className="code-keyword">public int</span> <span className="code-prop">DocumentedExperience</span> =&gt; <span className="code-num" style={{ color: '#38bdf8' }}>3</span>; <span style={{ color: '#64748b' }}>// Years</span>
+                </p>
+                <p style={{ paddingLeft: '1.2rem' }}>
                   <span className="code-keyword">public string[]</span> <span className="code-prop">CoreStack</span> =&gt; [
                 </p>
                 <p style={{ paddingLeft: '2.4rem' }}>
-                  <span className="code-str">"C# / .NET 8"</span>, <span className="code-str">"C (Kernel Drivers)"</span>,
+                  <span className="code-str">"C# / .NET 10 &amp; 8"</span>, <span className="code-str">"ASP.NET Core Web API"</span>,
                 </p>
                 <p style={{ paddingLeft: '2.4rem' }}>
-                  <span className="code-str">"Azure & Microservices"</span>, <span className="code-str">"React"</span>
+                  <span className="code-str">"Clean Architecture"</span>, <span className="code-str">"Windows Minifilter"</span>,
+                </p>
+                <p style={{ paddingLeft: '2.4rem' }}>
+                  <span className="code-str">"Azure &amp; Microservices"</span>, <span className="code-str">"GenAI &amp; Ollama"</span>
                 </p>
                 <p style={{ paddingLeft: '1.2rem' }}>];</p>
                 <p style={{ paddingLeft: '1.2rem' }}>
@@ -143,12 +149,12 @@ export default function Hero() {
               {/* Floating Badges */}
               <div className="floating-badge badge-top">
                 <ShieldCheck size={18} color="#06b6d4" />
-                <span>Clean Architecture & .NET 8</span>
+                <span>Clean Architecture &amp; .NET 10 / 8</span>
               </div>
 
               <div className="floating-badge badge-bottom">
                 <Cpu size={18} color="#8b5cf6" />
-                <span>Windows Kernel & Systems</span>
+                <span>Windows Minifilter &amp; Systems</span>
               </div>
             </div>
           </div>

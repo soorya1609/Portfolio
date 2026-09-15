@@ -1,9 +1,9 @@
 import React from 'react';
-import { Briefcase, GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
+import { Briefcase, GraduationCap, Calendar, MapPin, Award, CheckCircle2, Target, Sparkles, Cpu, Layers } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Experience() {
-  const { experiences, education, additionalInfo } = portfolioData;
+  const { experiences, education, additionalInfo, personal, professionalPositioning } = portfolioData;
 
   return (
     <section id="experience" className="section" style={{ background: 'rgba(11, 17, 32, 0.4)' }}>
@@ -15,10 +15,10 @@ export default function Experience() {
             Career Journey
           </span>
           <h2 className="section-title">
-            Experience & <span className="gradient-text">Milestones</span>
+            Experience &amp; <span className="gradient-text">Milestones</span>
           </h2>
           <p className="section-subtitle">
-            A chronological timeline of my professional roles, engineering contributions, and academic background.
+            3 years of documented professional experience in enterprise .NET backend engineering, low-level Windows systems, and cloud-native solutions.
           </p>
         </div>
 
@@ -52,12 +52,13 @@ export default function Experience() {
                 <div className="timeline-bullets">
                   {exp.highlights.map((item, hIdx) => (
                     <div key={hIdx} className="timeline-bullet">
+                      <CheckCircle2 size={15} color="#10b981" style={{ flexShrink: 0, marginTop: '3px' }} />
                       <span>{item}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className="project-tags">
+                <div className="project-tags" style={{ marginTop: '16px' }}>
                   {exp.technologies.map((tech) => (
                     <span key={tech} className="tech-pill">
                       {tech}
@@ -69,8 +70,77 @@ export default function Experience() {
           ))}
         </div>
 
+        {/* Target Roles & Positioning Grid */}
+        {personal.targetRoles && (
+          <div style={{ maxWidth: '900px', margin: '60px auto 0' }}>
+            <div className="glass-card" style={{ padding: '32px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                <Target size={22} color="#38bdf8" />
+                <h3 style={{ fontSize: '1.35rem', color: '#f8fafc' }}>
+                  Target Roles &amp; Professional Specialization
+                </h3>
+              </div>
+
+              {professionalPositioning && (
+                <p style={{ color: '#cbd5e1', fontSize: '0.94rem', lineHeight: '1.65', marginBottom: '20px' }}>
+                  {professionalPositioning.primaryHeadline}
+                </p>
+              )}
+
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '24px' }}>
+                {personal.targetRoles.map((role, idx) => (
+                  <span
+                    key={idx}
+                    style={{
+                      background: 'rgba(99, 102, 241, 0.12)',
+                      border: '1px solid rgba(99, 102, 241, 0.3)',
+                      color: '#c7d2fe',
+                      padding: '6px 14px',
+                      borderRadius: '9999px',
+                      fontSize: '0.84rem',
+                      fontWeight: 500
+                    }}
+                  >
+                    {role}
+                  </span>
+                ))}
+              </div>
+
+              {/* Skill Matrix Summary */}
+              {professionalPositioning && (
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '12px', marginTop: '16px' }}>
+                  <div style={{ padding: '12px', background: 'rgba(255, 255, 255, 0.03)', borderRadius: '8px' }}>
+                    <div style={{ fontSize: '0.75rem', color: '#38bdf8', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>
+                      Primary Backend
+                    </div>
+                    <div style={{ fontSize: '0.86rem', color: '#e2e8f0' }}>{professionalPositioning.primaryExpertise}</div>
+                  </div>
+                  <div style={{ padding: '12px', background: 'rgba(255, 255, 255, 0.03)', borderRadius: '8px' }}>
+                    <div style={{ fontSize: '0.75rem', color: '#06b6d4', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>
+                      Cloud &amp; Architecture
+                    </div>
+                    <div style={{ fontSize: '0.86rem', color: '#e2e8f0' }}>{professionalPositioning.cloudArchitecture}</div>
+                  </div>
+                  <div style={{ padding: '12px', background: 'rgba(255, 255, 255, 0.03)', borderRadius: '8px' }}>
+                    <div style={{ fontSize: '0.75rem', color: '#8b5cf6', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>
+                      Windows Systems
+                    </div>
+                    <div style={{ fontSize: '0.86rem', color: '#e2e8f0' }}>{professionalPositioning.systems}</div>
+                  </div>
+                  <div style={{ padding: '12px', background: 'rgba(255, 255, 255, 0.03)', borderRadius: '8px' }}>
+                    <div style={{ fontSize: '0.75rem', color: '#ec4899', fontWeight: 700, textTransform: 'uppercase', marginBottom: '4px' }}>
+                      Emerging AI
+                    </div>
+                    <div style={{ fontSize: '0.86rem', color: '#e2e8f0' }}>{professionalPositioning.emerging}</div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Education Section */}
-        <div style={{ maxWidth: '800px', margin: '60px auto 0' }}>
+        <div style={{ maxWidth: '900px', margin: '50px auto 0' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
             <GraduationCap size={22} color="#06b6d4" />
             <h3 style={{ fontSize: '1.4rem' }}>Education</h3>
@@ -103,13 +173,13 @@ export default function Experience() {
 
         {/* Additional Leadership & Competencies */}
         {additionalInfo && additionalInfo.length > 0 && (
-          <div style={{ maxWidth: '800px', margin: '60px auto 0' }}>
+          <div style={{ maxWidth: '900px', margin: '50px auto 0' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
               <Award size={22} color="#8b5cf6" />
-              <h3 style={{ fontSize: '1.4rem' }}>Leadership & Domain Competencies</h3>
+              <h3 style={{ fontSize: '1.4rem' }}>Leadership &amp; Domain Competencies</h3>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '16px' }}>
               {additionalInfo.map((item, idx) => (
                 <div key={idx} className="glass-card" style={{ padding: '22px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px', flexWrap: 'wrap', gap: '8px' }}>
