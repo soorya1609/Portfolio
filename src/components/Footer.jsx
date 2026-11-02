@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowUp } from 'lucide-react';
-import { Github, Linkedin, WhatsApp } from './Icons';
+import { Github, Linkedin, WhatsApp, YouTube, Instagram } from './Icons';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Footer() {
@@ -44,6 +44,26 @@ export default function Footer() {
               title="WhatsApp Chat"
             >
               <WhatsApp size={18} />
+            </a>
+            <a
+              href="https://www.youtube.com/@anybodycandev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon-btn social-icon-btn--yt"
+              aria-label="YouTube – Anybody Can Dev"
+              title="YouTube – Anybody Can Dev"
+            >
+              <YouTube size={18} color="currentColor" />
+            </a>
+            <a
+              href="https://www.instagram.com/anybodycandev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon-btn social-icon-btn--ig"
+              aria-label="Instagram – @anybodycandev"
+              title="Instagram – @anybodycandev"
+            >
+              <Instagram size={18} color="currentColor" />
             </a>
           </div>
 

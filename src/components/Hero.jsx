@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Mail, Terminal, Code2, Cpu, Download, Phone, ShieldCheck } from 'lucide-react';
-import { Github, Linkedin } from './Icons';
+import { Github, Linkedin, YouTube, Instagram } from './Icons';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Hero() {
@@ -99,6 +99,26 @@ export default function Hero() {
                   <Phone size={20} />
                 </a>
               )}
+              <a
+                href="https://www.youtube.com/@anybodycandev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn social-icon-btn--yt"
+                aria-label="YouTube – Anybody Can Dev"
+                title="YouTube Channel – Anybody Can Dev"
+              >
+                <YouTube size={20} color="currentColor" />
+              </a>
+              <a
+                href="https://www.instagram.com/anybodycandev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn social-icon-btn--ig"
+                aria-label="Instagram – @anybodycandev"
+                title="Instagram – @anybodycandev"
+              >
+                <Instagram size={20} color="currentColor" />
+              </a>
             </div>
           </div>
 

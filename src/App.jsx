@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import TechContent from './components/TechContent';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <TechContent />
         <Skills />
         <Projects />
         <Experience />
